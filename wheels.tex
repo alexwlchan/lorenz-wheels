@@ -1,0 +1,33 @@
+\documentclass[tikz, 18pt]{standalone}
+
+\definecolor{DarkBlue}{HTML}{201db9}
+\definecolor{DarkGreen}{HTML}{19a323}
+\definecolor{DarkRed}{HTML}{C7301F}
+
+\newcommand\drawWheel[3]{
+  \begin{tikzpicture}
+    %\fill [white] (0, 0) circle (6);
+    \draw [#1, line width=1.5pt] (0, 0) circle (1);
+    \foreach \s in {1, ..., #2} {
+      \draw [#1, line width=1.5pt] (90+360/#2*\s:1) -- (90+360/#2*\s:1.15);
+    }
+    \node [#1] at (0, 0) {\huge{#3}};
+  \end{tikzpicture}
+}
+
+\begin{document}
+  \drawWheel{DarkBlue}{43}{$\psi_1$}
+  \drawWheel{DarkBlue}{47}{$\psi_2$}
+  \drawWheel{DarkBlue}{51}{$\psi_3$}
+  \drawWheel{DarkBlue}{53}{$\psi_4$}
+  \drawWheel{DarkBlue}{59}{$\psi_5$}
+
+  \drawWheel{DarkGreen}{41}{$\chi_1$}
+  \drawWheel{DarkGreen}{31}{$\chi_2$}
+  \drawWheel{DarkGreen}{29}{$\chi_3$}
+  \drawWheel{DarkGreen}{26}{$\chi_4$}
+  \drawWheel{DarkGreen}{23}{$\chi_5$}
+
+  \drawWheel{DarkRed}{37}{$\mu_1$}
+  \drawWheel{DarkRed}{61}{$\mu_2$}
+\end{document}
