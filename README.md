@@ -1,6 +1,6 @@
 # lorenz-wheels
 
-This is some TikZ code I made to illustrate the wheels of a [Lorenz cipher machine], which was used by the German Army using World War II.
+This is some TikZ code I made to illustrate the wheels of a [Lorenz cipher machine], which was used by the German Army during World War II.
 
 The machine had twelve wheels, each with a different number of "cams" (switches), and they were grouped into three sets by the British codebreakers: psi/ψ, chi/χ, and mu/μ wheels.
 
