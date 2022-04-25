@@ -39,3 +39,8 @@ To convert the PDF to a series of PNG images with transparent backgrounds, use I
 ```
 $ convert -background none -density 500 wheels.pdf images/wheels.png
 ```
+
+## Further reading
+
+-   [Illustrating the cipher wheels of a Lorenz machine](https://alexwlchan.net/2022/04/lorenz-wheels/), a blog post I wrote that gives a bit more context and background
+-   [Tony Sale's website](https://www.codesandciphers.co.uk/virtualbp/fish/fishindex.htm), which explains the Lorenz cipher and the British codebreaking response in more detail
